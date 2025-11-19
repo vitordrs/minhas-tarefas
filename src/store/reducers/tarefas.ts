@@ -27,7 +27,7 @@ const initialState: TarefasState = {
       descricao: 'rever exercicio',
       prioridade: enums.Prioridade.IMPORTANTE,
       status: enums.Status.PENDENTE,
-      titulo: 'Estudar Bootstarp'
+      titulo: 'Estudar Bootstrap'
     }
   ]
 }
