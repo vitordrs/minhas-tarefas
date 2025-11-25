@@ -1,18 +1,24 @@
 import { useDispatch, useSelector } from 'react-redux'
+import { ReactNode } from 'react'
 import FiltroCard from '../../componentes/FiltroCard'
 import * as S from './style'
 import { RootReducer } from '../../store/idnex'
 import { alteraTermo } from '../../store/reducers/filtro'
 import * as enums from '../../utils/enums/Tarefa'
+import { Campo } from '../../styles'
 
-const BarraLateral = () => {
+interface BarraLateralProps {
+  children?: ReactNode
+}
+
+const BarraLateral = ({ children }: BarraLateralProps) => {
   const dispatch = useDispatch()
   const { termo } = useSelector((state: RootReducer) => state.filtro)
 
   return (
     <S.Aside>
       <div>
-        <S.Campo
+        <Campo
           type="text"
           placeholder="Buscar"
           value={termo}
@@ -47,6 +53,7 @@ const BarraLateral = () => {
           <FiltroCard criterio="todas" legenda="todas" />
         </S.Filtros>
       </div>
+      {children}
     </S.Aside>
   )
 }

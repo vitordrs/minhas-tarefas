@@ -1,6 +1,6 @@
 import * as enums from '../utils/enums/Tarefa'
 
-class tarefa {
+class Tarefa {
   titulo: string
   prioridade: enums.Prioridade
   status: enums.Status
@@ -22,4 +22,4 @@ class tarefa {
   }
 }
 
-export default tarefa
+export default Tarefa
