@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import EstiloGlobal, { Container } from './styles'
-import store from './store/idnex'
+import store from './store'
 import Home from './pages/Home/index'
 import Cadastro from './pages/Home/Cadastro'
 

@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import * as S from './style'
 import { alterarFiltro } from '../../store/reducers/filtro'
 import * as enums from '../../utils/enums/Tarefa'
-import { RootReducer } from '../../store/idnex'
+import { RootReducer } from '../../store'
 
 export type Props = {
   legenda: string
