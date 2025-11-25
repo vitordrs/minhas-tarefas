@@ -47,7 +47,7 @@ const BarraLateral = ({ children }: BarraLateralProps) => {
           />
           <FiltroCard
             valor={enums.Prioridade.NORMAL}
-            criterio="status"
+            criterio="prioridade"
             legenda="normal"
           />
           <FiltroCard criterio="todas" legenda="todas" />
